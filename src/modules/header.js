@@ -23,7 +23,7 @@ header = () => {
 	navItems.append(emojisNav, aboutNav, contactNav);
 
 	theLogo.addEventListener('click', () => {
-		window.onload();
+		window.location.reload();
 	});
 
 	const header = document.querySelector('#header');
