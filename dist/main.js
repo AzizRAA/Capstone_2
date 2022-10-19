@@ -16,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n\\tmargin: 0;\\r\\n\\tpadding: 0;\\r\\n\\tbox-sizing: border-box;\\r\\n}\\r\\n\\r\\n#header {\\r\\n\\tborder-bottom: 1px solid black;\\r\\n\\tdisplay: flex;\\r\\n\\talign-items: center;\\r\\n\\tjustify-content: center;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://capstone_2/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n\\tmargin: 0;\\r\\n\\tpadding: 0;\\r\\n\\tbox-sizing: border-box;\\r\\n\\tfont-family: 'Montserrat', sans-serif;\\r\\n}\\r\\n\\r\\nbody {\\r\\n\\toverflow-x: hidden;\\r\\n}\\r\\n\\r\\n#header {\\r\\n\\tdisplay: flex;\\r\\n\\talign-items: center;\\r\\n\\tpadding-left: 30px;\\r\\n\\tpadding-top: 20px;\\r\\n}\\r\\n\\r\\n.navItems {\\r\\n\\tmargin-left: 10vw;\\r\\n}\\r\\n\\r\\n.navItems-item {\\r\\n\\tfont-weight: 500;\\r\\n\\tfont-size: 1.8rem;\\r\\n\\tmargin-right: 2vw;\\r\\n\\tpadding-bottom: 5px;\\r\\n\\ttransition: ease-in-out 0.2s;\\r\\n\\tcolor: rgb(138, 134, 196);\\r\\n\\tcursor: pointer;\\r\\n\\ttext-shadow: 0px 0px 1px rgb(255, 255, 255);\\r\\n}\\r\\n\\r\\n.navItems-item:hover {\\r\\n\\tcolor: rgb(134, 0, 134);\\r\\n\\ttext-shadow: 0px 0px 1px rgb(212, 13, 212);\\r\\n}\\r\\n\\r\\n.theLogo {\\r\\n\\ttransition: ease-in-out 0.2s;\\r\\n}\\r\\n\\r\\n.theLogo:hover {\\r\\n\\t-webkit-filter: drop-shadow(1px 1px 0 white)\\r\\n                  drop-shadow(-1px -1px 0 white);\\r\\n  filter: drop-shadow(0px -1px 1px white) \\r\\n          drop-shadow(0px -1px 1px white);\\r\\n\\tcursor: pointer;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n\\toutline: 2px solid rgba(0, 0, 0, 0.459);\\r\\n\\tfilter: drop-shadow(0px -2px 2px black);\\r\\n\\tposition: fixed;\\r\\n\\tleft: 0;\\r\\n\\tbottom: 0;\\r\\n\\twidth: 100vw;\\r\\n\\theight: 60px;\\r\\n\\tbackground-color: rgb(255, 255, 255, 0.02);\\r\\n\\tbackdrop-filter: blur(10px);\\r\\n\\tdisplay: flex;\\r\\n\\talign-items: center;\\r\\n}\\r\\n\\r\\n.licenceText {\\r\\n\\tcolor: white;\\r\\n\\tfont-size: 1.2rem;\\r\\n\\tmargin-left: 35px;\\r\\n\\twidth: 60%;\\r\\n}\\r\\n\\r\\na {\\r\\n\\tcolor: rgb(255, 0, 255);\\r\\n\\ttext-decoration: none;\\r\\n}\\r\\n\\r\\nmarquee {\\r\\n\\twidth: 40%;\\r\\n\\tmargin-right: 35px;\\r\\n\\tfont-size: 2rem;\\r\\n\\tcolor: white;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://capstone_2/./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -126,7 +126,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\nconst header = __webpack_require__(/*! ./modules/header.js */ \"./src/modules/header.js\");\r\n\r\nwindow.onload = () => {\r\n\tconst body = document.querySelector('body');\r\n\tbody.style.backgroundColor = 'rgb(0, 0, 60, 0.2)';\r\n\t\r\n\theader();\r\n};\r\n\r\n\n\n//# sourceURL=webpack://capstone_2/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\n\r\nconst renderHeader = __webpack_require__(/*! ./modules/header.js */ \"./src/modules/header.js\");\r\nconst renderBackground = __webpack_require__(/*! ./modules/background.js */ \"./src/modules/background.js\");\r\nconst renderFooter = __webpack_require__(/*! ./modules/footer.js */ \"./src/modules/footer.js\");\r\n\r\nwindow.onload = () => {\r\n\trenderBackground();\r\n\trenderHeader();\r\n\trenderFooter();\r\n};\r\n\n\n//# sourceURL=webpack://capstone_2/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/background.js":
+/*!***********************************!*\
+  !*** ./src/modules/background.js ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const background = __webpack_require__(/*! ./artwork/background.jpg */ \"./src/modules/artwork/background.jpg\");\r\n\r\nrenderBackground = () => {\r\n\tconst bg = new Image();\r\n\tbg.src = background;\r\n\tbg.style.position = 'absolute';\r\n\tbg.style.top = 0;\r\n\tbg.style.zIndex = -1;\r\n\tbg.style.width = '100vw';\r\n\tbg.style.height = '100vh';\r\n\tbg.style.objectFit = 'cover';\r\n\t\r\n\tconst body = document.querySelector('body');\r\n\tbody.append(bg);\r\n};\r\n\r\nmodule.exports = renderBackground;\n\n//# sourceURL=webpack://capstone_2/./src/modules/background.js?");
+
+/***/ }),
+
+/***/ "./src/modules/footer.js":
+/*!*******************************!*\
+  !*** ./src/modules/footer.js ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const footer = document.querySelector('footer');\r\nconst renderMarquee = __webpack_require__(/*! ./marquee.js */ \"./src/modules/marquee.js\");\r\n\r\nconst setouLink = '<a href=\"https://github.com/Botlhale-Setou\">Botlhale Setou</a>';\r\nconst azizLink = '<a href=\"https://github.com/AzizRAA\">Azizbek Ruzmatov</a>';\r\nconst mitLink = `<a href=\"https://github.com/AzizRAA/Capstone_2/blob/development/MIT.md\">MIT Licence</a>`;\r\n\r\nconst renderFooter = () => {\r\n\tconst licenceText = document.createElement('p');\r\n\tlicenceText.classList.add('licenceText');\r\n\tlicenceText.innerHTML = `Created by ${setouLink} and ${azizLink} under the ${mitLink}`;\r\n\r\n\trenderMarquee();\r\n\tfooter.append(licenceText);\r\n};\r\n\r\nmodule.exports = renderFooter;\n\n//# sourceURL=webpack://capstone_2/./src/modules/footer.js?");
 
 /***/ }),
 
@@ -136,7 +156,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const Logo = __webpack_require__(/*! ./artwork/pixelplanetlogo.png */ \"./src/modules/artwork/pixelplanetlogo.png\");\r\n\r\nheader = () => {\r\n\tconst theLogo = new Image();\r\n\ttheLogo.src = Logo;\r\n\ttheLogo.width = 500;\r\n\r\n\tconst navItems = document.createElement('ul');\r\n\tconst emojisNav = document.createElement('a');\r\n\tconst aboutNav = document.createElement('a');\r\n\tconst contactNav = document.createElement('a');\r\n\r\n\temojisNav.innerText = 'Emojis';\r\n\taboutNav.innerText = 'About';\r\n\tcontactNav.innerText = 'Contact';\r\n\r\n\tnavItems.append(emojisNav, aboutNav, contactNav);\r\n\r\n\tconst header = document.querySelector('#header');\r\n\theader.append(theLogo, navItems);\r\n};\r\n\r\nmodule.exports = header;\n\n//# sourceURL=webpack://capstone_2/./src/modules/header.js?");
+eval("const Logo = __webpack_require__(/*! ./artwork/pixelplanetlogo.png */ \"./src/modules/artwork/pixelplanetlogo.png\");\r\n\r\nrenderHeader = () => {\r\n\tconst theLogo = new Image();\r\n\ttheLogo.src = Logo;\r\n\ttheLogo.style.width = '35vw';\r\n\r\n\tconst navItems = document.createElement('div');\r\n\tconst emojisNav = document.createElement('a');\r\n\tconst aboutNav = document.createElement('a');\r\n\tconst contactNav = document.createElement('a');\r\n\r\n\ttheLogo.classList.add('theLogo');\r\n\tnavItems.classList.add('navItems');\r\n\temojisNav.classList.add('navItems-item');\r\n\taboutNav.classList.add('navItems-item');\r\n\tcontactNav.classList.add('navItems-item');\r\n\r\n\temojisNav.innerText = 'Emojis';\r\n\taboutNav.innerText = 'About';\r\n\tcontactNav.innerText = 'Contact';\r\n\r\n\tnavItems.append(emojisNav, aboutNav, contactNav);\r\n\r\n\ttheLogo.addEventListener('click', () => {\r\n\t\twindow.location.reload();\r\n\t});\r\n\r\n\tconst header = document.querySelector('#header');\r\n\theader.innerHTML = '';\r\n\theader.append(theLogo, navItems);\r\n};\r\n\r\nmodule.exports = renderHeader;\n\n//# sourceURL=webpack://capstone_2/./src/modules/header.js?");
+
+/***/ }),
+
+/***/ "./src/modules/marquee.js":
+/*!********************************!*\
+  !*** ./src/modules/marquee.js ***!
+  \********************************/
+/***/ ((module) => {
+
+eval("const footer = document.querySelector('footer');\r\nconst allEmojisLink = 'https://emojihub.herokuapp.com/api/all';\r\n\r\nconst renderMarquee = async () => {\r\n\tconst marquee = document.createElement('marquee');\r\n\t\r\n\tconst response = await fetch(allEmojisLink);\r\n\tconst allEmojisArr = await response.json();\r\n\r\n\tfor (let i = 0; i < allEmojisArr.length; i += 1) {\r\n\t\tmarquee.innerHTML += `${allEmojisArr[i].htmlCode[0]} - `;\r\n\t};\r\n\t\r\n\tfooter.append(marquee);\r\n}\r\n\r\nmodule.exports = renderMarquee;\n\n//# sourceURL=webpack://capstone_2/./src/modules/marquee.js?");
+
+/***/ }),
+
+/***/ "./src/modules/artwork/background.jpg":
+/*!********************************************!*\
+  !*** ./src/modules/artwork/background.jpg ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"3f34e17ce770665b7e75.jpg\";\n\n//# sourceURL=webpack://capstone_2/./src/modules/artwork/background.jpg?");
 
 /***/ }),
 
@@ -147,7 +188,7 @@ eval("const Logo = __webpack_require__(/*! ./artwork/pixelplanetlogo.png */ \"./
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"430bd79e7bb928d65ec4.png\";\n\n//# sourceURL=webpack://capstone_2/./src/modules/artwork/pixelplanetlogo.png?");
+eval("module.exports = __webpack_require__.p + \"c9b23460453221704383.png\";\n\n//# sourceURL=webpack://capstone_2/./src/modules/artwork/pixelplanetlogo.png?");
 
 /***/ })
 

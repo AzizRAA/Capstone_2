@@ -1,11 +1,11 @@
 const Logo = require('./artwork/pixelplanetlogo.png');
 
-header = () => {
+renderHeader = () => {
 	const theLogo = new Image();
 	theLogo.src = Logo;
 	theLogo.style.width = '35vw';
 
-	const navItems = document.createElement('ul');
+	const navItems = document.createElement('div');
 	const emojisNav = document.createElement('a');
 	const aboutNav = document.createElement('a');
 	const contactNav = document.createElement('a');
@@ -23,13 +23,12 @@ header = () => {
 	navItems.append(emojisNav, aboutNav, contactNav);
 
 	theLogo.addEventListener('click', () => {
-		window.onload();
+		window.location.reload();
 	});
 
 	const header = document.querySelector('#header');
 	header.innerHTML = '';
-	console.log('running');
 	header.append(theLogo, navItems);
 };
 
-module.exports = header;
+module.exports = renderHeader;
