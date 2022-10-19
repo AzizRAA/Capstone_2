@@ -1,9 +1,11 @@
 import './styles.css';
 
-const header = require('./modules/header.js');
+const renderHeader = require('./modules/header.js');
 const renderBackground = require('./modules/background.js');
+const renderFooter = require('./modules/footer.js');
 
 window.onload = () => {
 	renderBackground();
-	header();
+	renderHeader();
+	renderFooter();
 };

@@ -1,6 +1,6 @@
 const Logo = require('./artwork/pixelplanetlogo.png');
 
-header = () => {
+renderHeader = () => {
 	const theLogo = new Image();
 	theLogo.src = Logo;
 	theLogo.style.width = '35vw';
@@ -32,4 +32,4 @@ header = () => {
 	header.append(theLogo, navItems);
 };
 
-module.exports = header;
+module.exports = renderHeader;
