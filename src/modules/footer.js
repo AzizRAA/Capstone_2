@@ -9,9 +9,8 @@ const renderFooter = () => {
 	const licenceText = document.createElement('p');
 	licenceText.classList.add('licenceText');
 	licenceText.innerHTML = `Created by ${setouLink} and ${azizLink} under the ${mitLink}`;
-
-	renderMarquee();
 	footer.append(licenceText);
+	renderMarquee();
 };
 
 module.exports = renderFooter;

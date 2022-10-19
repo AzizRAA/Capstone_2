@@ -79,4 +79,7 @@ marquee {
 	margin-right: 35px;
 	font-size: 2rem;
 	color: white;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	opacity: 60%;
 }
