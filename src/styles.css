@@ -14,7 +14,6 @@ body {
 	align-items: center;
 	padding-left: 30px;
 	padding-top: 20px;
-	position: fixed;
 }
 
 .navItems {
@@ -33,9 +32,8 @@ body {
 }
 
 .navItems-item:hover {
-	/* font-weight: 600; */
-	color: rgb(255, 255, 255);
-	text-shadow: 0px 0px 1px rgb(180, 169, 255);
+	color: rgb(134, 0, 134);
+	text-shadow: 0px 0px 1px rgb(212, 13, 212);
 }
 
 .theLogo {
@@ -50,14 +48,35 @@ body {
 	cursor: pointer;
 }
 
-#ghyt {
-	text-shadow: 2px -2px 5px white;
-}
-
 footer {
-	outline: 2px solid white;
+	outline: 2px solid rgba(0, 0, 0, 0.459);
+	filter: drop-shadow(0px -2px 2px black);
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100vw;
+	height: 60px;
+	background-color: rgb(255, 255, 255, 0.02);
+	backdrop-filter: blur(10px);
+	display: flex;
+	align-items: center;
+}
+
+.licenceText {
+	color: white;
+	font-size: 1.2rem;
+	margin-left: 35px;
+	width: 60%;
+}
+
+a {
+	color: rgb(255, 0, 255);
+	text-decoration: none;
+}
+
+marquee {
+	width: 40%;
+	margin-right: 35px;
+	font-size: 2rem;
+	color: white;
 }

@@ -28,7 +28,6 @@ renderHeader = () => {
 
 	const header = document.querySelector('#header');
 	header.innerHTML = '';
-	console.log('running');
 	header.append(theLogo, navItems);
 };
 
