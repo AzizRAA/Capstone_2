@@ -5,7 +5,7 @@ header = () => {
 	theLogo.src = Logo;
 	theLogo.style.width = '35vw';
 
-	const navItems = document.createElement('ul');
+	const navItems = document.createElement('div');
 	const emojisNav = document.createElement('a');
 	const aboutNav = document.createElement('a');
 	const contactNav = document.createElement('a');
