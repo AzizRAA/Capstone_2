@@ -1,3 +1,4 @@
+/* https://microverse.zoom.us/w/96093550525?tk=CDEYdqtBPgL9RVGraWF4Z9d9YQYBQDuVDKHFyw6FDiU.DQMAAAAWX583vRZqSXctMERIaVNPdUlQR1pGankzQ0dnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MzdXUzY5Rm8vRnp5S3VBQWQvVDJkUT09&uuid=WN_Ftf2_rRqQBKalX9HpdcTmw */
 * {
 	margin: 0;
 	padding: 0;
@@ -14,6 +15,7 @@ body {
 	align-items: center;
 	padding-left: 30px;
 	padding-top: 20px;
+	position: fixed;
 }
 
 .navItems {
@@ -55,11 +57,12 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100vw;
-	height: 60px;
+	height: 55px;
 	background-color: rgb(255, 255, 255, 0.02);
 	backdrop-filter: blur(10px);
 	display: flex;
 	align-items: center;
+	z-index: -1;
 }
 
 .licenceText {
@@ -82,4 +85,172 @@ marquee {
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
 	opacity: 60%;
+}
+
+#commentsPopup {
+	width: 100vw;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	backdrop-filter: blur(10px);
+	transition: 0.7s;
+	/* display: none; */
+}
+
+#cp-icon {
+	font-size: 10rem;
+	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+	line-height: 13rem;
+}
+
+#cp-title {
+	font-size: 4rem;
+	font-weight: 900;
+	font-family: 'Handlee', sans-serif;
+	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+#cp-attrDiv {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 600px;
+	padding: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.16));
+	margin-top: -30px;
+	height: 7rem;
+	margin-bottom: 20px;
+}
+
+.cp-attrDiv-node {
+	width: 280px;
+	text-align: center;
+	color: rgb(247, 247, 247);
+	text-shadow: 0px 0px 2px rgb(20, 2, 65);
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#cp-commentsDiv {
+	display: flex;
+	flex-direction: column;
+	/* background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.3)); */
+	width: 600px;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#cp-commentsDiv-title {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 2rem;
+	text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+#cp-commentsDiv-displayDiv {
+	margin-bottom: 20px;
+}
+
+#cp-commentsDiv-addCommentTitle {
+	margin-bottom: 10px;
+	text-align: center;
+	text-shadow: 0px 0px 3px rgb(255, 255, 255);
+	/* font-family: 'Handlee', sans-serif; */
+	font-size: 1.6rem;
+}
+
+#cp-nameInput {
+	width: 50%;
+	margin-bottom: 10px;
+	height: 30px;
+	background-color: transparent;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.267), transparent);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding-left: 15px;
+	outline: 1px solid rgba(255, 255, 255, 0.164);
+	border-radius: 10px;
+}
+
+#cp-nameInput::placeholder {
+	color: rgb(151, 151, 151);
+}
+
+#cp-commentTA {
+	width: 80%;
+	margin-bottom: 10px;
+	height: 60px;
+	background-color: transparent;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.267), transparent);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding-left: 15px;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	outline: 1px solid rgba(255, 255, 255, 0.164);
+	border-radius: 10px;
+}
+
+#cp-commentTA::placeholder {
+	color: rgb(151, 151, 151);
+}
+
+#commentButton {
+	width: 130px;
+	height: 35px;
+	background-color: rgb(12, 75, 9);
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 1.1rem;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#commentButton:hover {
+	background-color: rgb(0, 0, 0);
+	font-size: 1.12rem;
+	color: rgb(178, 62, 255);
+}
+
+#cp-commentsDiv-displayDiv {
+	outline: 3px solid rgb(49, 12, 75);
+	height: 100px;
+	border-radius: 10px;
+	padding: 6px;
+	background-color: rgba(0, 0, 0, 0.877);
+	color: rgb(178, 62, 255);
+	overflow-y: auto;
+}
+
+#exitCommentsPopup {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	color: white;
+	font-size: 3rem;
+	font-family: 'Michroma', san sans-serif;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#exitCommentsPopup:hover {
+	color: rgb(59, 0, 0);
+	text-shadow: 0px 0px 5px rgb(255, 82, 82);
+	font-size: 3.1rem;
 }

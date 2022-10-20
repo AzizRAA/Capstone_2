@@ -5,9 +5,9 @@ renderBackground = () => {
 	bg.src = background;
 	bg.style.position = 'absolute';
 	bg.style.top = 0;
-	bg.style.zIndex = -1;
+	bg.style.zIndex = -2;
 	bg.style.width = '100vw';
-	bg.style.height = '100vh';
+	bg.style.height = '100%';
 	bg.style.objectFit = 'cover';
 	
 	const body = document.querySelector('body');
