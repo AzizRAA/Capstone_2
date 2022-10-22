@@ -30,7 +30,7 @@ const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
     <button id="commentButton" type="button">Comment</button>
     </div>
   `;
-		
+
   // Load X button behaviour
   const exitBtn = document.querySelector('#exitCommentsPopup');
   exitBtn.addEventListener('click', () => {

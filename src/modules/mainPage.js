@@ -26,7 +26,7 @@ const renderMain = async () => {
 
   allCommentBtns.forEach((btn) => {
     btn.addEventListener('click', async () => {
-      // const index = parseInt(btn.id);
+      const index = parseInt(btn.id);
 
       await renderCommentsPopup(emojiDB[index], index);
     });
