@@ -19,7 +19,7 @@ const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
 		</div>
 		
 		<div id="cp-commentsDiv">
-		<h3 id="cp-commentsDiv-title">Comments (2)</h3>
+		<h3 id="cp-commentsDiv-title">Comments <span id="comCount"></span></h3>
 		
 		<div id="cp-commentsDiv-displayDiv">
 		</div>
