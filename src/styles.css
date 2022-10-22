@@ -32,12 +32,12 @@ body {
   transition: ease-in-out 0.2s;
   color: rgb(138, 134, 196);
   cursor: pointer;
-  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+  text-shadow: 0 0 1px rgb(255, 255, 255);
 }
 
 .navItems-item:hover {
   color: rgb(134, 0, 134);
-  text-shadow: 0px 0px 1px rgb(212, 13, 212);
+  text-shadow: 0 0 1px rgb(212, 13, 212);
 }
 
 .theLogo {
@@ -47,15 +47,15 @@ body {
 
 .theLogo:hover {
   -webkit-filter: drop-shadow(1px 1px 0 white)
-                  drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(0px -1px 1px white) 
-          drop-shadow(0px -1px 1px white);
+    drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(0 -1px 1px white)
+    drop-shadow(0 -1px 1px white);
   cursor: pointer;
 }
 
 footer {
   outline: 2px solid rgba(0, 0, 0, 0.459);
-  filter: drop-shadow(0px -2px 2px black);
+  filter: drop-shadow(0 -2px 2px black);
   position: fixed;
   left: 0;
   bottom: 0;
@@ -107,7 +107,7 @@ marquee {
 
 #cp-icon {
   font-size: 10rem;
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
   line-height: 13rem;
 }
 
@@ -115,7 +115,7 @@ marquee {
   font-size: 4rem;
   font-weight: 900;
   font-family: 'Handlee', sans-serif;
-  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -138,7 +138,7 @@ marquee {
   width: 280px;
   text-align: center;
   color: rgb(247, 247, 247);
-  text-shadow: 0px 0px 2px rgb(20, 2, 65);
+  text-shadow: 0 0 2px rgb(20, 2, 65);
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
@@ -149,7 +149,6 @@ marquee {
 #cp-commentsDiv {
   display: flex;
   flex-direction: column;
-  /* background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.3)); */
   width: 600px;
   border-radius: 15px;
   padding-left: 15px;
@@ -162,18 +161,13 @@ marquee {
   text-align: center;
   margin-bottom: 10px;
   font-size: 2rem;
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
-}
-
-#cp-commentsDiv-displayDiv {
-  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
 }
 
 #cp-commentsDiv-addCommentTitle {
   margin-bottom: 10px;
   text-align: center;
-  text-shadow: 0px 0px 3px rgb(255, 255, 255);
-  /* font-family: 'Handlee', sans-serif; */
+  text-shadow: 0 0 3px rgb(255, 255, 255);
   font-size: 1.6rem;
 }
 
@@ -186,10 +180,8 @@ marquee {
   color: white;
   border: none;
   border-radius: 10px;
-  color: white;
   padding-left: 15px;
   outline: 1px solid rgba(255, 255, 255, 0.164);
-  border-radius: 10px;
 }
 
 #cp-nameInput::placeholder {
@@ -198,19 +190,16 @@ marquee {
 
 #cp-commentTA {
   width: 80%;
-  margin-bottom: 10px;
   height: 60px;
   background-color: transparent;
   background-image: linear-gradient(rgba(0, 0, 0, 0.267), transparent);
   color: white;
   border: none;
   border-radius: 10px;
-  color: white;
   padding-left: 15px;
   padding-top: 10px;
   margin-bottom: 20px;
   outline: 1px solid rgba(255, 255, 255, 0.164);
-  border-radius: 10px;
 }
 
 #cp-commentTA::placeholder {
@@ -243,6 +232,7 @@ marquee {
   background-color: rgba(0, 0, 0, 0.877);
   color: rgb(178, 62, 255);
   overflow-y: auto;
+  margin-bottom: 20px;
 }
 
 #exitCommentsPopup {
