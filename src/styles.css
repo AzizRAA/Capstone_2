@@ -1,4 +1,3 @@
-/* https://microverse.zoom.us/w/96093550525?tk=CDEYdqtBPgL9RVGraWF4Z9d9YQYBQDuVDKHFyw6FDiU.DQMAAAAWX583vRZqSXctMERIaVNPdUlQR1pGankzQ0dnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=MzdXUzY5Rm8vRnp5S3VBQWQvVDJkUT09&uuid=WN_Ftf2_rRqQBKalX9HpdcTmw */
 * {
 	margin: 0;
 	padding: 0;
@@ -16,6 +15,9 @@ body {
 	padding-left: 30px;
 	padding-top: 20px;
 	position: fixed;
+	width: 100%;
+	background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+	height: 140px;
 }
 
 .navItems {
@@ -40,6 +42,7 @@ body {
 
 .theLogo {
 	transition: ease-in-out 0.2s;
+	margin-bottom: 15px;
 }
 
 .theLogo:hover {
@@ -96,7 +99,10 @@ marquee {
 	height: 100vh;
 	backdrop-filter: blur(10px);
 	transition: 0.7s;
-	/* display: none; */
+	top: -100vh;
+	overflow-y: auto;
+	border-bottom: 3px solid black;
+	padding: 0 35px;
 }
 
 #cp-icon {
@@ -110,6 +116,7 @@ marquee {
 	font-weight: 900;
 	font-family: 'Handlee', sans-serif;
 	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+	text-align: center;
 }
 
 #cp-attrDiv {
@@ -253,4 +260,71 @@ marquee {
 	color: rgb(59, 0, 0);
 	text-shadow: 0px 0px 5px rgb(255, 82, 82);
 	font-size: 3.1rem;
+}
+
+main {
+	height: 75.2vh;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding: 20px 2%;
+	overflow: auto;
+	position: fixed;
+	top: 140px;
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.507));
+	width: 100vw;
+}
+
+.emojiCard {
+	outline: 1px solid rgba(255, 255, 255, 0.445);
+	margin: 0 2% 50px 2%;
+	padding: 15px;
+	width: 315px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.158);
+	transition: ease-in-out 0.2s;
+	color: white;
+}
+
+.emojiCard:hover {
+	backdrop-filter: none;
+	background-color: transparent;
+}
+
+.emojiCard-icon {
+	font-size: 3.5rem;
+}
+
+.emojiCard-likeDiv {
+	display: flex;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 1.2rem;
+	color: rgb(201, 0, 0);
+	font-weight: 600;
+}
+
+.commentsBtn {
+	font-size: 1.1rem;
+	height: 40px;
+	width: 130px;
+	border-radius: 20px;
+	background-color: transparent;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.507), transparent);
+	color: white;
+	border: 1px solid rgb(179, 179, 255);
+	transition: ease-in-out 0.2s;
+}
+
+.commentsBtn:hover {
+	background-color: black;
+	color: rgb(202, 110, 255);
 }

@@ -2,12 +2,13 @@ import './styles.css';
 
 const renderBackground = require('./modules/background.js');
 const renderHeader = require('./modules/header.js');
-const renderCommentsPopup = require('./modules/comments.js');
+const renderMain = require('./modules/mainPage.js');
 const renderFooter = require('./modules/footer.js');
 
-window.onload = () => {
+
+window.onload = async () => {
 	renderBackground();
 	renderHeader();
-	renderCommentsPopup();
 	renderFooter();
+	await renderMain();
 };

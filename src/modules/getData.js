@@ -1,13 +1,13 @@
-const link = 'https://emojihub.herokuapp.com/api/random';
+const link = 'https://emojihub.herokuapp.com/api/all';
 const arrOutput = [];
 
 const getData = async () => {
-	for (let i = 0; i < 6; i += 1) {
 		const response = await fetch(link);
-		const randomEmoji = await response.json();
+		const allEmojis = await response.json();
 
-		arrOutput.push(randomEmoji);
-	};
+		for (let i = 100; i < 260; i += 1) {
+			arrOutput.push(allEmojis[i]);
+		}
 
 	return arrOutput;
 };
