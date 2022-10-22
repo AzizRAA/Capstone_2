@@ -5,10 +5,12 @@ const updateViewer = async (emojiID = 0) => {
 	viewer.innerHTML = '';
 	
 	console.log('emojiID = ' + emojiID);
-	const commentsDB = await getComments(emojiID);
+	const raw = await getComments(emojiID);
+	const commentsDB = Array.from(raw);
 
 	if (commentsDB.length === 0) {
 		viewer.innerHTML = 'Hi there 👋 - be the first to comment on this emoji';
+		viewer.style.color = 'yellow';
 	} else {
 			commentsDB.forEach(commentObj => {
 			viewer.innerHTML += `<p>${commentObj.creation_date} ${commentObj.username}: ${commentObj.comment}</p>`;

@@ -1,8 +1,7 @@
-const addComment = require('./involvement.js');
+const addComment = require('./addComment.js');
 const updateViewer = require('./viewer.js');
 
 const mainContainer = document.querySelector('#commentsPopup');
-
 
 const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
 	// Render comments popup structure
@@ -42,7 +41,6 @@ const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
 	await updateViewer(eNum);
 	
 	// Load comment button behaviour
-
 	const commentBtnx = document.querySelector('#commentButton');
 	commentBtnx.addEventListener('click', async () => {
 		const nameInput = document.querySelector('#cp-nameInput');
