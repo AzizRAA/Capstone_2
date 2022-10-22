@@ -19,14 +19,14 @@ const renderMain = async () => {
 
     <button class="commentsBtn" id="${i}" type="button">Comment</button>
     </div>
-    `
-  };
+    `;
+  }
 
   const allCommentBtns = document.querySelectorAll('.commentsBtn');
 
   allCommentBtns.forEach((btn) => {
     btn.addEventListener('click', async () => {
-      const index = parseInt(btn.id);
+      // const index = parseInt(btn.id);
 
       await renderCommentsPopup(emojiDB[index], index);
     });

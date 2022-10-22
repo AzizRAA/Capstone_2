@@ -12,7 +12,7 @@ const renderFooter = () => {
 
   footer.append(licenceText);
 
-  // renderMarquee();	
+// renderMarquee();	
 };
 
 module.exports = renderFooter;
