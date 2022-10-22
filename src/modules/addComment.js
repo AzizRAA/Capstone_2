@@ -4,10 +4,10 @@ const addComment = async (data) => {
   await fetch(clink, {
     method: 'POST',
     headers: {
-		  'Content-type': 'application/json; charset= UTF-8',
+      'Content-type': 'application/json; charset= UTF-8',
     },
     body: JSON.stringify(data),
-  }).then(data => console.log(data));
+  });
 };
 
 module.exports = addComment;
