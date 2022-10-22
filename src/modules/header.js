@@ -1,6 +1,6 @@
 const Logo = require('./artwork/pixelplanetlogo.png');
 
-renderHeader = () => {
+const renderHeader = () => {
   const theLogo = new Image();
   theLogo.src = Logo;
   theLogo.style.width = '35vw';

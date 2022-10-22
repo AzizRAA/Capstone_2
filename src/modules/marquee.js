@@ -10,9 +10,9 @@ const renderMarquee = async () => {
   for (let i = 0; i < allEmojisArr.length; i += 1) {
     marquee.innerHTML += `• ${allEmojisArr[i].name} ${allEmojisArr[i].htmlCode[0]} •
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`;
-  };
+  }
 
   footer.append(marquee);
-}
+};
 
 module.exports = renderMarquee;

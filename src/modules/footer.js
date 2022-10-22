@@ -3,7 +3,7 @@ const footer = document.querySelector('footer');
 
 const setouLink = '<a href="https://github.com/Botlhale-Setou">Botlhale Setou</a>';
 const azizLink = '<a href="https://github.com/AzizRAA">Azizbek Ruzmatov</a>';
-const mitLink = `<a href="https://github.com/AzizRAA/Capstone_2/blob/development/MIT.md">MIT Licence</a>`;
+const mitLink = '<a href="https://github.com/AzizRAA/Capstone_2/blob/development/MIT.md">MIT Licence</a>';
 
 const renderFooter = () => {
   const licenceText = document.createElement('p');

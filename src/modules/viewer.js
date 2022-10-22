@@ -15,10 +15,10 @@ const updateViewer = async (emojiID = 0) => {
     viewer.innerHTML = 'Hi there 👋 - be the first to comment on this emoji';
     viewer.style.color = 'yellow';
   } else {
-    commentsDB.forEach(commentObj => {
+    commentsDB.forEach((commentObj) => {
       viewer.innerHTML += `<p>${commentObj.creation_date} ${commentObj.username}: ${commentObj.comment}</p>`;
-		});
-  };
+    });
+  }
 };
 
 module.exports = updateViewer;

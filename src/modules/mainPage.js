@@ -1,5 +1,6 @@
 const getData = require('./getData.js');
 const renderCommentsPopup = require('./comments.js');
+
 const mainDiv = document.querySelector('main');
 
 const renderMain = async () => {
@@ -18,7 +19,7 @@ const renderMain = async () => {
 
     <button class="commentsBtn" id="${i}" type="button">Comment</button>
     </div>
-    `;
+    `
   };
 
   const allCommentBtns = document.querySelectorAll('.commentsBtn');

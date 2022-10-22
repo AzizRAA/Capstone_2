@@ -29,7 +29,7 @@ const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
     <textarea name="commentTA" id="cp-commentTA" cols="30" rows="10" placeholder="Your insights" aria-placeholder="Your insights"></textarea>
     <button id="commentButton" type="button">Comment</button>
     </div>
-  `;	
+  `;
 		
   // Load X button behaviour
   const exitBtn = document.querySelector('#exitCommentsPopup');
@@ -39,18 +39,17 @@ const renderCommentsPopup = async (emoji_obj = {}, eNum = 0) => {
 
   // Load/Render emoji comments
   await updateViewer(eNum);
-	
+
   // Load comment button behaviour
   const commentBtnx = document.querySelector('#commentButton');
   commentBtnx.addEventListener('click', async () => {
     const nameInput = document.querySelector('#cp-nameInput');
     const commentTA = document.querySelector('#cp-commentTA');
-    console.log('button clicked');
 
     await addComment({
       item_id: eNum,
       username: nameInput.value,
-      comment: commentTA.value,			
+      comment: commentTA.value,
     });
 
     nameInput.value = '';
